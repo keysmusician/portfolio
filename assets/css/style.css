@@ -656,6 +656,12 @@ section {
   z-index: 9994;
 }
 
+.portfolio .portfolio-wrap .portfolio-info .portfolio-lightbox {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
 .portfolio .portfolio-wrap .portfolio-info h4 {
   font-size: 20px;
   color: #272829;
