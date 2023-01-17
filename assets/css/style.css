@@ -779,7 +779,17 @@ section {
 # PDF viewer
 --------------------------------------------------------------*/
 #adobe-dc-view {
+  height: 142.22vw;
   margin: auto;
+  max-height: 11in;
+  max-width: 100%;
+  padding: 0;
+  width: 80vw;
+}
+@media (min-width: 992px) {
+  #adobe-dc-view {
+    max-width: 8.5in;
+  }
 }
 
 /*--------------------------------------------------------------
