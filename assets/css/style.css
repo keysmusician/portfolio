@@ -449,29 +449,47 @@ section {
 /*--------------------------------------------------------------
 # Skills
 --------------------------------------------------------------*/
+.skills .proficiency {
+  text-align: left;
+}
+
 .skills .progress {
-  height: 60px;
+  height: 30px;
   display: block;
   background: none;
   border-radius: 0;
 }
 
 .skills .progress .skill {
+  display: flex;
+  justify-content: space-between;
   padding: 10px 0;
   margin: 0;
   text-transform: uppercase;
-  display: block;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
   color: #e8e6e3;
 }
 
-.skills .progress .skill .val {
-  float: right;
+.skills .progress .skill .technology-name {
+  flex: 1;
   font-style: normal;
 }
 
+.skills .progress .skill .proficiency {
+  flex: 1;
+  font-style: normal;
+  text-align: center;
+}
+
+.skills .progress .skill .val {
+  flex: 1;
+  font-style: normal;
+  text-align: right;
+}
+
 .skills .progress-bar-wrap {
+  display: none;
   background: #f2f3f5;
 }
 
