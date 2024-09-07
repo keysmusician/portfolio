@@ -138,6 +138,13 @@
               and public communication, virtual and face-to-face collaboration, online learning and self-study skills.
             </p>
             <p>
+              In my latest role, I assisted in maintaining multiple systems based on the .NET platform. I've played a
+              key part in updating outdated systems by migrating to modern frameworks, utilizing cloud services,
+              implementing appropriate design patterns, improving
+              documentation, and adding unit tests. I lead my team in implementing automated processes to increase the
+              efficiency of our development cycle.
+            </p>
+            <p>
               Whether composing music or writing software, I appreciate being able to realize an idea. It's satisfying
               to create something with real impact and to know that it's making the world a better place for not only
               myself, but hopefully many others. I don't just like to get stuff done, but to get it done right. My
@@ -180,7 +187,8 @@
             </li>
 
             <li>
-              Excellent - I am fluent with this technology. I have a deep understanding of it, and can easily utilize
+              Excellent - I am fluent with this technology. I have an extensive understanding of it, and can easily
+              utilize
               this tool productively without documentation.
             </li>
           </ol>
@@ -306,7 +314,7 @@
             <div class="progress">
               <span class="skill">
                 <p class="technology-name">SQL</p>
-                <p class="proficiency">3/5 — Competent</p>
+                <p class="proficiency">4/5 — Proficient</p>
                 <p class="val">2021</i>
               </span>
               <div class="progress-bar-wrap">
@@ -724,10 +732,13 @@
         <script src="https://documentservices.adobe.com/view-sdk/viewer.js"></script>
         <script type="text/javascript">
           document.addEventListener("adobe_dc_view_sdk.ready", function () {
-            var adobeDCView = new AdobeDC.View({ clientId: "fe55202358b44fa1a1bdf1e839f99030", divId: "adobe-dc-view" });
+            var clientId = "bbf8f32c2ec94514b7e4194e55351c02" // For production
+            //var clientId = "0f6792dcb96249519643d9f0b067584f" // For development
+            var fileName = "Justin Masayda — Software Engineer 2024.pdf"
+            var adobeDCView = new AdobeDC.View({ clientId: clientId, divId: "adobe-dc-view" });
             adobeDCView.previewFile({
-              content: { location: { url: "assets/pdf/Justin Masayda — Software Engineer 2023.pdf" } },
-              metaData: { fileName: "Justin Masayda — Software Engineer 2023.pdf" }
+              content: { location: { url: `assets/pdf/${fileName}` } },
+              metaData: { fileName: fileName }
             }, { embedMode: "SIZED_CONTAINER" });
           });
         </script>
